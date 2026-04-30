@@ -10,7 +10,15 @@ let identite = {};
 let voixFr = null;
 let questionVerrouillee = false;
 
-const MODULE_NOM = "Travail en hauteur (Primo)";
+const MODULE_NOM = "QCM Travail en hauteur";
+
+// Classes pour lesquelles la compétence "Sécurité - Travail en hauteur" est greffée
+// (les autres classes sont enregistrées avec la note seule, sans compétence)
+const CLASSES_AVEC_COMPETENCE = [
+    "CAP IFCA", "BAC PRO MFER", "2nde TNE",
+    "CAP MPI", "CAP ETAM", "BP ETAM",
+    "TP CVC", "BTS FED", "Technicien BTP"
+];
 
 // ----- Préparer la voix française -----
 function chargerVoix() {
@@ -215,23 +223,33 @@ function showResult() {
 
     lire(`${identite.prenom}, tu as ${score} bonnes réponses sur ${total}. ${message}`);
 
-    // Envoi collecteur universel inerWeb
+    // Envoi collecteur universel inerWeb : note d'abord, compétence si la classe en a une
     if (typeof inerwebSend === "function") {
-        inerwebSend({
+        const payload = {
             module: MODULE_NOM,
             nom: identite.nom,
             prenom: identite.prenom,
             classe: identite.classe,
             note20: note,
             score: pct,
-            detail: `${score}/${total}`,
-            competences: {
+            detail: `${score}/${total}`
+        };
+
+        // Greffer la compétence uniquement si la classe figure dans la liste reconnue
+        const classeNorm = (identite.classe || "").toUpperCase();
+        const aCompetence = CLASSES_AVEC_COMPETENCE.some(c =>
+            classeNorm.includes(c.toUpperCase())
+        );
+        if (aCompetence) {
+            payload.competences = {
                 "Sécurité - Travail en hauteur": note >= 16 ? "Maîtrisé"
                                               : note >= 12 ? "Acquis"
                                               : note >= 8  ? "En cours"
                                               : "Non acquis"
-            }
-        });
+            };
+        }
+
+        inerwebSend(payload);
     }
 }
 
