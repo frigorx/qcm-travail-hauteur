@@ -1,0 +1,362 @@
+/* =========================================================
+   inerWeb Édu — QCM Travail en hauteur (PRIMO-ARRIVANTS)
+   Charte : bleu #1b3a63, orange #ff6b35, fond clair
+   Texte ÉXTRA-LARGE, pictos visibles, peu de texte
+   ========================================================= */
+
+:root {
+    --iw-bleu: #1b3a63;
+    --iw-bleu-clair: #2c5a8f;
+    --iw-orange: #ff6b35;
+    --iw-orange-clair: #ff8a5b;
+    --iw-fond: #f5f7fa;
+    --iw-blanc: #ffffff;
+    --iw-gris: #e5e9ef;
+    --iw-texte: #1a1a1a;
+    --iw-vert: #2e7d32;
+    --iw-vert-clair: #c8e6c9;
+    --iw-rouge: #c62828;
+    --iw-rouge-clair: #ffcdd2;
+    --iw-radius: 14px;
+    --iw-ombre: 0 2px 10px rgba(27, 58, 99, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 18pt;
+    line-height: 1.6;
+    color: var(--iw-texte);
+    background: var(--iw-fond);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.iw-header {
+    background: var(--iw-bleu);
+    color: var(--iw-blanc);
+    padding: 16px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: var(--iw-ombre);
+}
+
+.iw-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 22pt;
+}
+
+.iw-flake { font-size: 26pt; }
+
+.iw-badge {
+    background: var(--iw-orange);
+    color: var(--iw-blanc);
+    padding: 2px 12px;
+    border-radius: 6px;
+    font-size: 14pt;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+}
+
+.iw-signature {
+    font-size: 12pt;
+    font-style: italic;
+    opacity: 0.92;
+}
+
+.iw-main {
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    color: var(--iw-bleu);
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    margin: 0 0 8px 0;
+    border-bottom: 4px solid var(--iw-orange);
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--iw-bleu);
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 22pt;
+    margin: 0 0 16px 0;
+}
+
+.iw-intro {
+    font-size: 16pt;
+    color: #555;
+    margin: 6px 0 18px 0;
+}
+
+.iw-card {
+    background: var(--iw-blanc);
+    border-radius: var(--iw-radius);
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: var(--iw-ombre);
+    border-left: 6px solid var(--iw-orange);
+}
+
+/* ---------- Formulaire identification ---------- */
+.iw-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.iw-field label {
+    font-weight: bold;
+    color: var(--iw-bleu);
+    margin-bottom: 6px;
+    font-size: 18pt;
+}
+
+.iw-field input {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 18pt;
+    padding: 12px 14px;
+    border: 3px solid var(--iw-gris);
+    border-radius: var(--iw-radius);
+    background: var(--iw-blanc);
+    transition: border-color 0.15s;
+}
+
+.iw-field input:focus {
+    outline: none;
+    border-color: var(--iw-orange);
+}
+
+/* ---------- Boutons ---------- */
+.iw-btn {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 18pt;
+    padding: 14px 28px;
+    border: none;
+    border-radius: var(--iw-radius);
+    cursor: pointer;
+    transition: background 0.15s, transform 0.05s;
+    margin: 6px 4px 0 0;
+}
+
+.iw-btn-big { font-size: 22pt; padding: 18px 36px; width: 100%; margin-top: 14px; }
+
+.iw-btn:active { transform: translateY(1px); }
+
+.iw-btn-primary { background: var(--iw-orange); color: var(--iw-blanc); }
+.iw-btn-primary:hover { background: var(--iw-orange-clair); }
+
+.iw-btn-secondary { background: var(--iw-gris); color: var(--iw-bleu); }
+.iw-btn-secondary:hover { background: #d3dae3; }
+
+.iw-btn-bleu { background: var(--iw-bleu); color: var(--iw-blanc); }
+.iw-btn-bleu:hover { background: var(--iw-bleu-clair); }
+
+.iw-btn-audio {
+    background: var(--iw-bleu);
+    color: var(--iw-blanc);
+    font-size: 24pt;
+    padding: 8px 18px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+.iw-btn-audio:hover { background: var(--iw-bleu-clair); }
+
+/* ---------- Question ---------- */
+.iw-progress {
+    background: var(--iw-gris);
+    border-radius: 999px;
+    height: 18px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.iw-progress-bar {
+    background: var(--iw-vert);
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.iw-progress-label {
+    font-size: 16pt;
+    color: var(--iw-bleu);
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.iw-question-emoji {
+    font-size: 60pt;
+    text-align: center;
+    margin: 10px 0 0 0;
+    line-height: 1;
+}
+
+.iw-question-text {
+    font-size: 24pt;
+    color: var(--iw-bleu);
+    font-weight: bold;
+    margin: 14px 0 8px 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.iw-audio-row {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.iw-options {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.iw-options button {
+    width: 100%;
+    background: var(--iw-fond);
+    border: 4px solid var(--iw-gris);
+    border-radius: var(--iw-radius);
+    padding: 18px 22px;
+    cursor: pointer;
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 20pt;
+    text-align: left;
+    color: var(--iw-texte);
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: border-color 0.15s, background 0.15s, transform 0.05s;
+}
+
+.iw-options button:hover {
+    border-color: var(--iw-orange);
+    background: #fff7f2;
+    transform: translateX(4px);
+}
+
+.iw-options button.juste {
+    border-color: var(--iw-vert);
+    background: var(--iw-vert-clair);
+}
+
+.iw-options button.faux {
+    border-color: var(--iw-rouge);
+    background: var(--iw-rouge-clair);
+}
+
+.iw-options .opt-emoji {
+    font-size: 36pt;
+    line-height: 1;
+    flex-shrink: 0;
+    width: 56px;
+    text-align: center;
+}
+
+.iw-options .opt-txt {
+    flex: 1;
+}
+
+.iw-feedback {
+    font-size: 22pt;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+.iw-feedback.juste { color: var(--iw-vert); }
+.iw-feedback.faux { color: var(--iw-rouge); }
+
+/* ---------- Résultats ---------- */
+.iw-result-emoji {
+    font-size: 80pt;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+
+.iw-result-text {
+    font-size: 24pt;
+    text-align: center;
+    color: var(--iw-bleu);
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.iw-stars {
+    text-align: center;
+    font-size: 40pt;
+    margin: 16px 0;
+    letter-spacing: 8px;
+}
+
+.iw-result-detail {
+    font-size: 16pt;
+    background: var(--iw-fond);
+    padding: 14px 18px;
+    border-radius: var(--iw-radius);
+    margin-top: 18px;
+}
+
+.iw-result-detail ul {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+.iw-result-detail li {
+    margin-bottom: 6px;
+}
+
+/* ---------- Pied ---------- */
+.iw-footer {
+    text-align: center;
+    padding: 18px;
+    color: #666;
+    font-size: 12pt;
+    border-top: 1px solid var(--iw-gris);
+    margin-top: 30px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    body { font-size: 16pt; }
+    .iw-header { padding: 12px 14px; flex-direction: column; align-items: flex-start; }
+    .iw-main { padding: 0 10px; }
+    .iw-card { padding: 16px; }
+    h1 { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+    .iw-question-text { font-size: 20pt; }
+    .iw-question-emoji { font-size: 50pt; }
+    .iw-options button { font-size: 17pt; padding: 14px 16px; }
+    .iw-options .opt-emoji { font-size: 30pt; width: 44px; }
+    .iw-result-emoji { font-size: 60pt; }
+    .iw-result-text { font-size: 20pt; }
+    .iw-stars { font-size: 32pt; }
+}
+
+/* ---------- Impression ---------- */
+@media print {
+    body { background: white; }
+    .iw-header, .iw-footer, .iw-btn-audio { display: none !important; }
+    .iw-card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+}

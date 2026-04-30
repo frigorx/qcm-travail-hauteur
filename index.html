@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travail en hauteur — Sécurité — inerWeb Édu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="iw-header">
+        <div class="iw-logo">
+            <span class="iw-flake">❄</span>
+            <span class="iw-name">inerWeb</span>
+            <span class="iw-badge">Édu</span>
+        </div>
+        <div class="iw-signature">par F. Henninot — LP Privé Jacques Raynaud, Marseille</div>
+    </header>
+
+    <main class="iw-main">
+        <h1>🪜 Le travail en hauteur</h1>
+        <p class="iw-intro">Quiz facile — 10 questions — lecture audio possible 🔊</p>
+
+        <section id="identification" class="iw-card">
+            <h2>👤 Qui es-tu ?</h2>
+
+            <div class="iw-field">
+                <label for="prenom">Mon prénom</label>
+                <input type="text" id="prenom" autocomplete="given-name" placeholder="Exemple : Mohamed">
+            </div>
+            <div class="iw-field">
+                <label for="nom">Mon nom</label>
+                <input type="text" id="nom" autocomplete="family-name" placeholder="Exemple : Kouassi">
+            </div>
+            <div class="iw-field">
+                <label for="classe">Ma classe</label>
+                <input type="text" id="classe" placeholder="Exemple : CAP IFCA 1">
+            </div>
+
+            <button class="iw-btn iw-btn-primary iw-btn-big" onclick="startQCM()">
+                ▶️ Je commence
+            </button>
+        </section>
+
+        <section id="qcm-container" class="iw-card" style="display:none;"></section>
+    </main>
+
+    <footer class="iw-footer">
+        <span>inerWeb Édu — outil pédagogique LP Privé Jacques Raynaud</span>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="inerweb-results.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
