@@ -1,24 +1,15 @@
 /* =========================================================
    inerWeb Édu — QCM Travail en hauteur (PRIMO-ARRIVANTS)
    Logique simple : 1 réponse par question + feedback immédiat
-   Lecture audio (Web Speech API) + envoi collecteur universel
+   Lecture audio (Web Speech API) + bilan sauvegardé en local
    ========================================================= */
 
 let currentQuestion = 0;
 let userAnswers = [];
-let identite = {};
 let voixFr = null;
 let questionVerrouillee = false;
 
 const MODULE_NOM = "QCM Travail en hauteur";
-
-// Classes pour lesquelles la compétence "Sécurité - Travail en hauteur" est greffée
-// (les autres classes sont enregistrées avec la note seule, sans compétence)
-const CLASSES_AVEC_COMPETENCE = [
-    "CAP IFCA", "BAC PRO MFER", "2nde TNE",
-    "CAP MPI", "CAP ETAM", "BP ETAM",
-    "TP CVC", "BTS FED", "Technicien BTP"
-];
 
 // ----- Préparer la voix française -----
 function chargerVoix() {
@@ -54,20 +45,6 @@ function lireQuestion() {
 
 // ----- Démarrage -----
 function startQCM() {
-    const prenom = document.getElementById('prenom').value.trim();
-    const nom = document.getElementById('nom').value.trim();
-    const classe = document.getElementById('classe').value.trim();
-
-    if (!prenom || !nom || !classe) {
-        alert("👉 Écris ton prénom, ton nom et ta classe.");
-        return;
-    }
-
-    identite = {
-        prenom, nom, classe,
-        date: new Date().toLocaleDateString("fr-FR")
-    };
-
     document.getElementById('identification').style.display = 'none';
     document.getElementById('qcm-container').style.display = 'block';
     showQuestion();
@@ -189,7 +166,7 @@ function showResult() {
     let html = `
         <h2>🏁 Tes résultats</h2>
         <div class="iw-result-emoji">${visage}</div>
-        <div class="iw-result-text">${escapeHtml(identite.prenom)}, tu as ${score} bonnes réponses sur ${total}.</div>
+        <div class="iw-result-text">Tu as ${score} bonnes réponses sur ${total}.</div>
         <div class="iw-stars">${etoiles}</div>
         <div class="iw-result-text">Note : ${note} / 20</div>
         <div class="iw-result-text" style="font-size:18pt; color:#555;">${message}</div>
@@ -221,35 +198,26 @@ function showResult() {
 
     container.innerHTML = html;
 
-    lire(`${identite.prenom}, tu as ${score} bonnes réponses sur ${total}. ${message}`);
+    lire(`Tu as ${score} bonnes réponses sur ${total}. ${message}`);
 
-    // Envoi collecteur universel inerWeb : note d'abord, compétence si la classe en a une
-    if (typeof inerwebSend === "function") {
-        const payload = {
+    sauvegarderResultatLocal(note, pct, score, total);
+}
+
+// ----- Sauvegarde locale du bilan (aucun envoi, aucun nom) -----
+function sauvegarderResultatLocal(note, pct, score, total) {
+    try {
+        const cle = 'qcm-travail-hauteur-resultats';
+        const resultats = JSON.parse(localStorage.getItem(cle) || '[]');
+        resultats.push({
             module: MODULE_NOM,
-            nom: identite.nom,
-            prenom: identite.prenom,
-            classe: identite.classe,
             note20: note,
             score: pct,
-            detail: `${score}/${total}`
-        };
-
-        // Greffer la compétence uniquement si la classe figure dans la liste reconnue
-        const classeNorm = (identite.classe || "").toUpperCase();
-        const aCompetence = CLASSES_AVEC_COMPETENCE.some(c =>
-            classeNorm.includes(c.toUpperCase())
-        );
-        if (aCompetence) {
-            payload.competences = {
-                "Sécurité - Travail en hauteur": note >= 16 ? "Maîtrisé"
-                                              : note >= 12 ? "Acquis"
-                                              : note >= 8  ? "En cours"
-                                              : "Non acquis"
-            };
-        }
-
-        inerwebSend(payload);
+            detail: `${score}/${total}`,
+            timestamp: new Date().toISOString()
+        });
+        localStorage.setItem(cle, JSON.stringify(resultats));
+    } catch (e) {
+        console.warn('[QCM] Sauvegarde locale impossible', e);
     }
 }
 
