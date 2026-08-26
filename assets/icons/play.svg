@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Commencer</title>
+  <desc id="desc">Triangle de lecture dans un cercle.</desc>
+  <g fill="none" stroke="#1B3A63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="32" cy="32" r="25" fill="#FFFDF8"/><path d="M27 21L45 32L27 43Z" fill="#FF6B35" stroke="#C9451A"/>
+  </g>
+</svg>

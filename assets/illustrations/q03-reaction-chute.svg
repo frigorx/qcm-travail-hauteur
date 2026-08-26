@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Temps de réaction très court</title>
+  <desc id="desc">Un chronomètre et la silhouette d’un travailleur en déséquilibre illustrent la rapidité d’une chute.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="160" cy="103" r="63" fill="#FFFDF8"/><path d="M160 40V25M141 25H179M160 103L193 75M160 103V67"/><path d="M112 151Q160 180 208 151" stroke="#C9451A"/><g transform="translate(330 105) scale(1)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 2L-34-14M12 2L34-4"/><path d="M-8 34L-28 54M8 34L30 48"/>
+  </g><path d="M385 68V153M385 153L372 135M385 153L398 135" stroke="#C9451A" stroke-width="9"/>
+  </g>
+</svg>

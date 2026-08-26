@@ -57,15 +57,18 @@ function showQuestion() {
     const q = questions[currentQuestion];
     const total = questions.length;
     const progress = Math.round((currentQuestion / total) * 100);
+    const visual = QUESTION_VISUALS[q.id];
 
     let html = `
         <div class="iw-progress-label">Question ${currentQuestion + 1} sur ${total}</div>
         <div class="iw-progress"><div class="iw-progress-bar" style="width:${progress}%"></div></div>
-        <div class="iw-question-emoji">${q.emoji}</div>
+        <figure class="iw-question-illustration">
+            <img src="${visual.src}" alt="${escapeHtml(visual.alt)}">
+        </figure>
         <div class="iw-question-text">${escapeHtml(q.question)}</div>
         <div class="iw-audio-row">
             <button class="iw-btn iw-btn-audio" onclick="lireQuestion()" title="Écouter la question">
-                🔊 Écouter
+                ${iwIcon('speaker', 'iw-btn-icon')}<span>Écouter</span>
             </button>
         </div>
         <ul class="iw-options" id="iw-options">
@@ -75,7 +78,7 @@ function showQuestion() {
         html += `
             <li>
                 <button onclick="repondre(${i})" data-index="${i}">
-                    <span class="opt-emoji">${opt.emoji}</span>
+                    ${iwIcon(OPTION_MARKERS[i], 'opt-icon')}
                     <span class="opt-txt">${escapeHtml(opt.txt)}</span>
                 </button>
             </li>
@@ -108,12 +111,12 @@ function repondre(i) {
 
     const feedback = document.getElementById('iw-feedback');
     if (isJuste) {
-        feedback.textContent = "✅ Bravo !";
+        feedback.innerHTML = `${iwIcon('check', 'iw-feedback-icon')}<span>Bravo !</span>`;
         feedback.className = "iw-feedback juste";
         lire("Bravo !");
     } else {
         const bonneTxt = q.options[q.correct].txt;
-        feedback.textContent = "❌ La bonne réponse est : " + bonneTxt;
+        feedback.innerHTML = `${iwIcon('cross', 'iw-feedback-icon')}<span>La bonne réponse est : ${escapeHtml(bonneTxt)}</span>`;
         feedback.className = "iw-feedback faux";
         lire("La bonne réponse est : " + bonneTxt);
     }
@@ -149,37 +152,40 @@ function showResult() {
     else if (pct >= 25) nbEtoiles = 2;
     else nbEtoiles = 1;
 
-    const etoiles = "⭐".repeat(nbEtoiles) + "☆".repeat(5 - nbEtoiles);
+    const etoiles = Array.from({ length: 5 }, (_, index) =>
+        iwIcon(index < nbEtoiles ? 'star-filled' : 'star-empty', 'iw-star-icon')
+    ).join('');
 
-    let visage, message;
+    let resultIcon, message;
     if (pct >= 75) {
-        visage = "😃";
+        resultIcon = "face-success";
         message = "Très bien !";
     } else if (pct >= 50) {
-        visage = "🙂";
+        resultIcon = "face-progress";
         message = "C'est bien. Tu peux encore mieux faire.";
     } else {
-        visage = "🤔";
+        resultIcon = "face-retry";
         message = "Recommence pour t'améliorer.";
     }
 
     let html = `
-        <h2>🏁 Tes résultats</h2>
-        <div class="iw-result-emoji">${visage}</div>
+        <h2 class="iw-result-heading">${iwIcon('flag', 'iw-heading-icon')}<span>Tes résultats</span></h2>
+        <div class="iw-result-illustration">${iwIcon(resultIcon, 'iw-result-icon')}</div>
         <div class="iw-result-text">Tu as ${score} bonnes réponses sur ${total}.</div>
         <div class="iw-stars">${etoiles}</div>
         <div class="iw-result-text">Note : ${note} / 20</div>
         <div class="iw-result-text" style="font-size:18pt; color:#555;">${message}</div>
 
         <div class="iw-result-detail">
-            <strong>📋 Tes réponses :</strong>
+            <strong class="iw-detail-heading">${iwIcon('clipboard', 'iw-detail-heading-icon')}<span>Tes réponses :</span></strong>
             <ul>
     `;
 
     questions.forEach((q, idx) => {
         const isJuste = userAnswers[idx] === q.correct;
-        const icone = isJuste ? "✅" : "❌";
-        html += `<li>${icone} <strong>Question ${idx + 1}</strong> — ${escapeHtml(q.question)}`;
+        const icone = iwIcon(isJuste ? 'check' : 'cross', 'iw-detail-icon');
+        const statut = isJuste ? 'Correct' : 'À revoir';
+        html += `<li>${icone}<span class="iw-sr-only">${statut} : </span><strong>Question ${idx + 1}</strong> — ${escapeHtml(q.question)}`;
         if (!isJuste) {
             html += `<br><span style="color:#2e7d32;">→ Bonne réponse : ${escapeHtml(q.options[q.correct].txt)}</span>`;
         }
@@ -191,8 +197,8 @@ function showResult() {
         </div>
 
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;">
-            <button class="iw-btn iw-btn-bleu" onclick="window.print()">🖨️ Imprimer</button>
-            <button class="iw-btn iw-btn-secondary" onclick="location.reload()">↺ Recommencer</button>
+            <button class="iw-btn iw-btn-bleu" onclick="window.print()">${iwIcon('print', 'iw-btn-icon')}<span>Imprimer</span></button>
+            <button class="iw-btn iw-btn-secondary" onclick="location.reload()">${iwIcon('restart', 'iw-btn-icon')}<span>Recommencer</span></button>
         </div>
     `;
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Harnais antichute</title>
+  <desc id="desc">Vue simplifiée d’un harnais avec sangles croisées, ceinture et points de connexion.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(240 116) scale(1.55)">
+    <path d="M-30-42Q0-60 30-42L23 38H-23Z" fill="#F7F1E7"/>
+    <path d="M-24-38L0-4L24-38M0-4V34M-20 4L20 4M-20 34L0 10L20 34" stroke="#C9451A" stroke-width="7"/>
+    <circle cx="0" cy="-4" r="6" fill="#FFFDF8"/>
+  </g><circle cx="240" cy="34" r="18" fill="#F7F1E7"/><path d="M130 80H75M350 80H405M130 146H75M350 146H405" stroke="#C7D2E0"/><circle cx="65" cy="80" r="8" fill="#FF6B35"/><circle cx="415" cy="80" r="8" fill="#FF6B35"/><circle cx="65" cy="146" r="8" fill="#FF6B35"/><circle cx="415" cy="146" r="8" fill="#FF6B35"/>
+  </g>
+</svg>

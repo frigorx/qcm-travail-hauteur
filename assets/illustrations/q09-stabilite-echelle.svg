@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Échelle stabilisée</title>
+  <desc id="desc">L’échelle est calée au sol et attachée en partie haute pour empêcher glissement et basculement.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(250 188) skewX(-8)">
+    <path d="M-20 0L-20 -140M20 0L20 -140"/>
+    <path d="M-14 -122H14"/><path d="M-14 -100.8H14"/><path d="M-14 -79.6H14"/><path d="M-14 -58.400000000000006H14"/><path d="M-14 -37.2H14"/><path d="M-14 -16H14"/>
+  </g><path d="M160 43H390V188"/><path d="M236 64L190 50" stroke="#C9451A" stroke-width="7"/><circle cx="184" cy="49" r="9" fill="#FF6B35" /><path d="M207 188H295" stroke="#1E7E54" stroke-width="10"/><path d="M201 188L186 171M301 188L316 171" stroke="#1E7E54"/>
+  </g>
+</svg>

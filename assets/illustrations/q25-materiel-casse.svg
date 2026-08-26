@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Matériel cassé signalé</title>
+  <desc id="desc">Une sangle endommagée est étiquetée hors service et signalée à un responsable.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 118H205" stroke="#3D7FCA" stroke-width="16"/><path d="M205 118L224 99L241 138L259 98L278 118H320" stroke="#C0392B" stroke-width="12"/><rect x="164" y="145" width="150" height="38" rx="10" fill="#FBE7E4" stroke="#C0392B" stroke-dasharray="7 6"/><g transform="translate(380 118) scale(0.9)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 4L-34-12M12 4L32-18"/>
+  </g><path d="M326 84Q346 66 359 76" stroke="#C9451A" stroke-dasharray="6 7"/>
+  </g>
+</svg>

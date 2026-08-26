@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Résultats</title>
+  <desc id="desc">Drapeau d’arrivée quadrillé.</desc>
+  <g fill="none" stroke="#1B3A63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M15 56V10M16 13Q29 6 48 14V38Q31 30 16 38" fill="#FFFDF8"/><path d="M17 14L33 34M32 10L48 30M17 28L29 39" stroke="#C9451A"/>
+  </g>
+</svg>

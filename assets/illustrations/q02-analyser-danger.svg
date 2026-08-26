@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Analyser avant de monter</title>
+  <desc id="desc">Un travailleur observe le sol, l’échelle et la zone en hauteur avant de commencer.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(105 122) scale(1)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 4L-34-12M12 4L32-18"/>
+  </g><g transform="translate(280 188) skewX(-8)">
+    <path d="M-20 0L-20 -132M20 0L20 -132"/>
+    <path d="M-14 -114H14"/><path d="M-14 -94.4H14"/><path d="M-14 -74.8H14"/><path d="M-14 -55.199999999999996H14"/><path d="M-14 -35.599999999999994H14"/><path d="M-14 -16H14"/>
+  </g><g transform="translate(383 81) scale(0.8)">
+    <circle cx="-10" cy="-10" r="30" fill="#84B7EC"/>
+    <path d="M12 12L38 38" stroke-width="10"/>
+    <path d="M-22-10L-12 0L5-20" stroke="#1E7E54"/>
+  </g><path d="M155 90Q205 48 255 75" stroke="#C9451A" stroke-dasharray="8 8"/>
+  </g>
+</svg>

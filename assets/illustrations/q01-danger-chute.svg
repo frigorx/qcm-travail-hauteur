@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Risque de chute</title>
+  <desc id="desc">Un travailleur est près d’un bord protégé tandis qu’une flèche rappelle le risque de chute.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(270 188)">
+    <path d="M0 0V-92M150 0V-92M0-92H150M0-48H150"/>
+    <rect x="0" y="-16" width="150" height="16" fill="#FF6B35" />
+  </g><g transform="translate(335 92) scale(0.9)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 2L-34-14M12 2L34-4"/><path d="M-8 34L-28 54M8 34L30 48"/>
+  </g><path d="M205 65V145M205 145L191 126M205 145L219 126" stroke="#C9451A" stroke-width="9"/><g transform="translate(115 188) skewX(-7)">
+    <path d="M-20 0L-20 -120M20 0L20 -120"/>
+    <path d="M-14 -102H14"/><path d="M-14 -84.8H14"/><path d="M-14 -67.6H14"/><path d="M-14 -50.400000000000006H14"/><path d="M-14 -33.2H14"/><path d="M-14 -16H14"/>
+  </g>
+  </g>
+</svg>

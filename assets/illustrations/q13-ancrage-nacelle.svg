@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Ancrage prévu dans la nacelle</title>
+  <desc id="desc">Dans la nacelle, la longe relie le harnais du travailleur à l’anneau d’ancrage prévu.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(205 128) scale(0.9)">
+    <rect x="-64" y="24" width="128" height="34" rx="10" fill="#84B7EC"/>
+    <circle cx="-40" cy="60" r="13" fill="#F7F1E7"/><circle cx="40" cy="60" r="13" fill="#F7F1E7"/>
+    <path d="M-28 24L14-56L58-90" stroke="#C9451A" stroke-width="12"/>
+    <rect x="34" y="-116" width="74" height="42" rx="6" fill="#FFFDF8"/>
+    <path d="M34-116V-70M108-116V-70M34-76H108"/>
+  </g><g transform="translate(300 36) scale(0.55)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 5L-24 30M12 5L25 29"/><path d="M-8 35L-14 64M8 35L16 64"/>
+  </g><path d="M300 50Q335 72 344 106" stroke="#C9451A" stroke-width="7"/><circle cx="347" cy="109" r="8" fill="#FF6B35" />
+  </g>
+</svg>

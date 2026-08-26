@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Tirant d’air</title>
+  <desc id="desc">La zone libre sous une personne reliée à un antichute est matérialisée jusqu’au sol.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 65H300" stroke-width="12"/><circle cx="195" cy="75" r="10" fill="#FF6B35" /><path d="M195 85Q155 112 184 142" stroke="#C9451A" stroke-width="7"/><g transform="translate(185 133) scale(0.8)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 2L-34-14M12 2L34-4"/><path d="M-8 34L-28 54M8 34L30 48"/>
+  </g><path d="M365 80V188M350 80H380M350 188H380" stroke="#3D7FCA"/><path d="M365 98L356 112M365 98L374 112M365 170L356 156M365 170L374 156" stroke="#3D7FCA"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Imprimer</title>
+  <desc id="desc">Imprimante avec une feuille.</desc>
+  <g fill="none" stroke="#1B3A63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 24V8H46V24M18 45H11V25H53V45H46M18 37H46V56H18Z" fill="#FFFDF8"/><path d="M24 44H40M24 50H37" stroke="#3D7FCA"/>
+  </g>
+</svg>

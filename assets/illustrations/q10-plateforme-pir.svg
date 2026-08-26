@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Plateforme individuelle roulante</title>
+  <desc id="desc">Une plateforme individuelle roulante possède des marches, un plancher et un garde-corps.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(125 188)"><path d="M0 0L70-118H210V0M70-118V0M0 0H210M15-25H70M29-50H70M43-75H70M57-100H70"/><path d="M70-118H210M85-118V-170M195-118V-170M85-170H195M85-144H195"/><circle cx="45" cy="7" r="10" fill="#F7F1E7"/><circle cx="185" cy="7" r="10" fill="#F7F1E7"/><rect x="70" y="-130" width="140" height="12" fill="#FF6B35" /></g><g transform="translate(260 70) scale(0.78)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 5L-24 30M12 5L25 29"/><path d="M-8 35L-14 64M8 35L16 64"/>
+  </g>
+  </g>
+</svg>

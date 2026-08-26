@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Contrôle périodique du harnais</title>
+  <desc id="desc">Un calendrier, une loupe et un harnais représentent le contrôle périodique par une personne compétente.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(118 110) scale(0.9)">
+    <rect x="-48" y="-42" width="96" height="84" rx="10" fill="#FFFDF8"/>
+    <path d="M-48-18H48M-24-52V-32M24-52V-32"/>
+    <path d="M-25 4H-8M8 4H25M-25 22H-8M8 22H25" stroke="#3D7FCA"/>
+  </g><g transform="translate(308 120) scale(0.9)">
+    <path d="M-30-42Q0-60 30-42L23 38H-23Z" fill="#F7F1E7"/>
+    <path d="M-24-38L0-4L24-38M0-4V34M-20 4L20 4M-20 34L0 10L20 34" stroke="#C9451A" stroke-width="7"/>
+    <circle cx="0" cy="-4" r="6" fill="#FFFDF8"/>
+  </g><g transform="translate(398 70) scale(0.58)">
+    <circle cx="-10" cy="-10" r="30" fill="#84B7EC"/>
+    <path d="M12 12L38 38" stroke-width="10"/>
+    <path d="M-22-10L-12 0L5-20" stroke="#1E7E54"/>
+  </g><path d="M118 151V174M101 162H135" stroke="#C9451A"/>
+  </g>
+</svg>

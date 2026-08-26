@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Longe avec absorbeur d’énergie</title>
+  <desc id="desc">Une longe relie deux mousquetons et comporte au centre un absorbeur replié.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M65 105Q105 45 150 100" stroke="#3D7FCA" stroke-width="9"/><g transform="translate(62 110) rotate(-20) scale(0.55)">
+    <path d="M-34-42Q-55-5-33 36Q-7 66 28 40Q50 17 39-19Q29-50-2-50Q-20-50-34-42Z"/>
+    <path d="M-5-32L29 22" stroke="#C9451A" stroke-width="9"/>
+    <rect x="5" y="-8" width="26" height="28" rx="6" fill="#FF6B35" />
+  </g><path d="M155 100L185 100"/><path d="M185 78L205 122L225 78L245 122L265 78L285 100" stroke="#C9451A" stroke-width="8"/><rect x="173" y="68" width="124" height="64" rx="14" stroke="#FF6B35" stroke-dasharray="7 7"/> <path d="M285 100Q340 45 410 105" stroke="#3D7FCA" stroke-width="9"/><g transform="translate(414 110) rotate(-20) scale(0.55)">
+    <path d="M-34-42Q-55-5-33 36Q-7 66 28 40Q50 17 39-19Q29-50-2-50Q-20-50-34-42Z"/>
+    <path d="M-5-32L29 22" stroke="#C9451A" stroke-width="9"/>
+    <rect x="5" y="-8" width="26" height="28" rx="6" fill="#FF6B35" />
+  </g>
+  </g>
+</svg>

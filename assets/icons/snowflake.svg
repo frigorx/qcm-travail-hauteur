@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Flocon inerWeb</title>
+  <desc id="desc">Flocon géométrique de la marque inerWeb.</desc>
+  <g fill="none" stroke="#1B3A63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32 8V56M11 20L53 44M53 20L11 44M32 8L25 15M32 8L39 15M32 56L25 49M32 56L39 49M11 20L21 20M11 20L16 29M53 44L43 44M53 44L48 35M53 20L43 20M53 20L48 29M11 44L21 44M11 44L16 35" stroke="#FFFDF8"/>
+  </g>
+</svg>

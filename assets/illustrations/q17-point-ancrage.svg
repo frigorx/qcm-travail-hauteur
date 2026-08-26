@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Point d’ancrage solide</title>
+  <desc id="desc">La longe du harnais monte vers un point d’ancrage fixe placé au-dessus du travailleur.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M110 44H370" stroke-width="14"/><circle cx="240" cy="55" r="13" fill="#FF6B35" /><path d="M240 68Q210 92 232 126" stroke="#C9451A" stroke-width="7"/><g transform="translate(240 124) scale(0.95)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 5L-24 30M12 5L25 29"/><path d="M-8 35L-14 64M8 35L16 64"/>
+  </g><path d="M228 115L240 132L252 115M240 132V155" stroke="#C9451A" stroke-width="6"/>
+  </g>
+</svg>

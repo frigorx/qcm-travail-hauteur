@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Matériel mis hors service après une chute</title>
+  <desc id="desc">Un harnais est placé dans une zone de quarantaine signalée par un cadre rouge tireté.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="72" y="38" width="230" height="142" rx="18" fill="#FBE7E4" stroke="#C0392B" stroke-width="6" stroke-dasharray="12 8"/><g transform="translate(187 111) scale(0.9)">
+    <path d="M-30-42Q0-60 30-42L23 38H-23Z" fill="#F7F1E7"/>
+    <path d="M-24-38L0-4L24-38M0-4V34M-20 4L20 4M-20 34L0 10L20 34" stroke="#C9451A" stroke-width="7"/>
+    <circle cx="0" cy="-4" r="6" fill="#FFFDF8"/>
+  </g><path d="M336 58H422V148H336Z" fill="#FFFDF8"/><path d="M351 79H407M351 100H397M351 121H385" stroke="#3D7FCA"/><path d="M322 166H438" stroke="#C0392B" stroke-width="9"/>
+  </g>
+</svg>

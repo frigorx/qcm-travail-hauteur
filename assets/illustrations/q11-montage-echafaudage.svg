@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Montage par une personne formée</title>
+  <desc id="desc">Un travailleur casqué assemble un échafaudage en consultant une notice de montage.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(245 188)">
+    <path d="M0 0V-132M165 0V-132M0-132H165M0-172H165M0-214H165"/>
+    <path d="M0 0L165-132M165 0L0-132" stroke="#3D7FCA"/>
+    <rect x="-5" y="-142" width="175" height="12" rx="5" fill="#FF6B35" />
+    <circle cx="12" cy="7" r="9" fill="#F7F1E7"/><circle cx="153" cy="7" r="9" fill="#F7F1E7"/>
+  </g><g transform="translate(105 123) scale(1)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 4L-34-12M12 4L32-18"/>
+  </g><g transform="translate(165 88) rotate(-8)"><rect x="-30" y="-38" width="60" height="76" rx="6" fill="#FFFDF8"/><path d="M-18-20H18M-18-5H18M-18 10H10" stroke="#3D7FCA"/><path d="M-18 25L-10 32L3 18" stroke="#1E7E54"/></g>
+  </g>
+</svg>

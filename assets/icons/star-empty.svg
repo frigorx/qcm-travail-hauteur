@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Étoile non acquise</title>
+  <desc id="desc">Étoile vide bordée de bleu marine.</desc>
+  <g fill="none" stroke="#1B3A63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32 8L39 24L56 26L43 37L47 54L32 45L17 54L21 37L8 26L25 24Z" fill="#FFFDF8" />
+  </g>
+</svg>

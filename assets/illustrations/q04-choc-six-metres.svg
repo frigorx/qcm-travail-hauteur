@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
+  <title id="title">Chute et choc</title>
+  <desc id="desc">Une plateforme haute et une voiture séparées par une flèche rappellent qu’une chute peut produire un choc violent.</desc>
+  <rect x="2" y="2" width="476" height="216" rx="24" fill="#FFFDF8" stroke="#C7D2E0" stroke-width="3"/>
+  <path d="M34 188H446" stroke="#C7D2E0" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#1B3A63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(55 86)">
+    <path d="M0 0V-62M130 0V-62M0-62H130M0-32H130"/>
+    <rect x="0" y="-16" width="130" height="16" fill="#FF6B35" />
+  </g><path d="M55 188V86H185"/><g transform="translate(120 36) scale(0.65)">
+    <circle cx="0" cy="-22" r="12" fill="#F7F1E7"/>
+    <path d="M-13-25Q0-39 13-25V-20H-13Z" fill="#FF6B35" />
+    <path d="M-13-8Q0-14 13-8L11 35H-11Z" fill="#84B7EC"/>
+    <path d="M-6-10L0 8L6-10M-10 16H10" stroke="#C9451A" stroke-width="4"/>
+    <path d="M-12 5L-24 30M12 5L25 29"/><path d="M-8 35L-14 64M8 35L16 64"/>
+  </g><path d="M225 65V152M225 152L211 134M225 152L239 134" stroke="#C9451A" stroke-width="9"/><g transform="translate(330 145)"><path d="M-70 18L-50-20H42L70 18V39H-70Z" fill="#84B7EC"/><circle cx="-45" cy="41" r="14" fill="#F7F1E7"/><circle cx="45" cy="41" r="14" fill="#F7F1E7"/><path d="M-40-19L-20-43H22L42-19"/></g>
+  </g>
+</svg>

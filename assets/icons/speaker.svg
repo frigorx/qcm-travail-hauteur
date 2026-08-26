@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Écouter</title>
+  <desc id="desc">Haut-parleur avec deux ondes sonores.</desc>
+  <g fill="none" stroke="#1B3A63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 25H22L36 14V50L22 39H10Z" fill="#84B7EC"/><path d="M44 23Q54 32 44 41M50 16Q64 32 50 48" stroke="#C9451A"/>
+  </g>
+</svg>

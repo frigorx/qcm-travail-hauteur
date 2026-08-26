@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Échelle</title>
+  <desc id="desc">Échelle simple dessinée en traits bleu marine et orange.</desc>
+  <g fill="none" stroke="#1B3A63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20 56L28 8M44 56L52 8M25 20H49M23 32H47M21 44H45"/><path d="M17 56H47" stroke="#C9451A"/>
+  </g>
+</svg>
